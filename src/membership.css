@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    background-image:   linear-gradient(to bottom, rgba(52, 44, 44, 0.505), rgba(222, 222, 222, 0)),url('../public/photoset2/memberbg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: grid;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.quote {
+    
+    color: #ffe0bc;
+    margin-bottom: 50px;
+    animation: fadeIn 2s ease;
+     /* Added animation for fading in */
+    -webkit-animation: fadeIn 2s ease;
+    padding: 30px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 16%;
+    font-weight: 20px   ;
+}
+.quote h2{
+    font-size: 43px;
+    font-weight: 30px;
+    border: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    
+}
+.quote p{
+    font-size: 20px;
+}
+.quote button{
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    height: 80px;
+    width: auto;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    transition: opacity 0.3s;
+}
+
+.quote button:hover{
+    opacity: 0.7;
+   
+}
+.quote button a {
+    text-decoration: none;
+    color: inherit;
+}
+.quote button h1 {
+    margin: 0;
+}
+@keyframes ripple {
+    to {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+.ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    background-color: rgba(255, 255, 255, 0.7);
+    animation: ripple 0.5s linear;
+}
+
+/* Button animation */
+@keyframes button-scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.quote button:hover .ripple-effect {
+    animation: ripple 0.5s linear;
+}
+
+.quote button:hover {
+    animation: button-scale 0.3s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    width: 400px;
+    padding: 50px;
+    border-radius: 10px;
+    animation: slideIn 2s ease; /* Added animation for sliding in */
+    margin-top: 30px;
+    margin-left: 220px;
+
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.demo1 {
+    font-size: 3em;
+    font-family: 'Adobe jeson';
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite alternate; /* Added animation for pulsating effect */
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+a {
+    color: #909090;
+    font-size: 1.2em;
+    transition: color 0.3s ease; /* Added transition for smooth color change */
+}
+
+a:hover {
+    color: #007bff; /* Adjusted hover color */
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+.input1 {
+    width: auto;
+    height: auto;
+}
+
+.checkbox {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.demo2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.submit {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    animation: fadeInUp 2s ease; /* Added animation for fading in and moving up */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.checkbox {
+    font-size: 0.6em; /* Updated font size for terms & conditions */
+}
+.checkbox label{
+    color: antiquewhite;
+}
+

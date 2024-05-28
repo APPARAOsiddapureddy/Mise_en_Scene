@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', Arial, sans-serif; /* Default font family with fallbacks */
+    font-size: 16px; /* Default font size */
+
+}
+.navbar {
+    height: 100px;
+    width: 100%;
+    background-color: papayawhip;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .left img {
+    height: 80px;
+    margin-left: 50px;
+}
+
+.navbar .right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .right ul li {
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.navbar .mid h2 {
+    font-size: 2.5em;
+    color: #3c2929;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+a:visited {
+    color: rgb(70, 64, 51);
+}
+
+a:hover, a:focus {
+    opacity: 0.7;
+}
+
+a:active {
+    color: blue;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar .left img {
+        margin: 10px 0;
+    }
+
+    .navbar .mid h2 {
+        margin: 10px 0;
+    }
+
+    .navbar .right ul {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .navbar .right ul li {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.navbar .right ul li:hover {
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Media queries */
+
+
+
+/* nav bar end */
+
+/* footer */
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-media {
+    margin-bottom: 30px;
+}
+
+.social-media h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.fa-ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fa-ul li {
+    margin-bottom: 15px;
+}
+
+.fa-ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.fa-ul li a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+.fa-ul li a i {
+    margin-right: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+
+.footer-logo {
+    margin-top: 50px;
+}
+
+.footer-logo img {
+    height: 100px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-logo img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-media h2 {
+        font-size: 1.2em; 
+    }
+
+    .fa-ul li a {
+        font-size: 1em; 
+    }
+
+    p {
+        font-size: 1em; 
+    }
+}
+
+/* main */
+
+.contactuscon{
+    background-size: cover;
+    color: #f9f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    text-align: center;
+    background-image:  linear-gradient(to bottom, rgba(7, 7, 7, 0.52), rgba(0, 0, 0, 0.73)),url('../public/photoset1/artdirection.png');
+}
+/* Default styles for contact section */
+.ntg {
+    text-align: center;
+    margin: 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-info div {
+    flex: 1;
+    margin: 20px;
+}
+
+.contact-info i {
+    color: #007bff;
+    font-size: 3rem;
+}
+
+.contact-info p {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info div {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info div {
+        width: 100%;
+    }
+
+    .contact-info div:first-child {
+        margin-bottom: 20px;
+    }
+}

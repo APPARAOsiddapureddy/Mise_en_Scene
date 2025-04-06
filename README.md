@@ -1,2 +1,20 @@
 # Mise_en_Scene
- Mise-en-scene is the stage design and arrangement of actors in scenes for a theatre or film production, both in the visual arts through storyboarding, visual themes, and cinematography and in narrative-storytelling through directions. The term is also commonly used to refer to single scenes that are representative of a film.  Mise-en-scène has been called film criticism's "grand undefined term." It has been criticized for its focus on the dramatic design aspects rather than the plot itself, as those who utilize mise-en-scène tend to look at what is "put before the camera" rather than the story. The use of mise-en-scène is significant as it allows the director to convey messages to the viewer through what is placed in the scene, not just the content of the scene. Mise-en-scène allows the director to not only convey their message but also to implement their aesthetic, as such, each director has their own unique mise-en-scène. Mise-en-scène refers to everything in front of the camera, including the set design, lighting, and actors, and the ultimate way that this influences how the scene comes together for the audience.  When applied to the cinema, mise-en-scène refers to everything that appears before the camera—the sets, props, costumes, actors, and even the lighting.These elements help to express a film's vision by generating a sense of time and space, as well as setting a mood. Mise-en-scène can be used to suggest a character's state of mind, whether that be happy with bright colors, or sad with darker colors.
+# 🎬 Mise-en-Scene – Film Club Website
+
+Welcome to the official website of **Mise-en-Scene**, the Film Club of IIIT Sri City. This platform is designed to spread awareness and love for the art of filmmaking by explaining the **24 crafts of cinema** and recommending must-watch movies from various **Indian film industries**.
+
+## 🌟 Features
+
+- 🎥 **Explore the 24 Crafts of Filmmaking**  
+  Learn about all the departments involved in making a film — from writing and direction to cinematography, editing, and more.
+
+- 🎞️ **Pan-Indian Movie Recommendations**  
+  Get curated suggestions of must-watch films from different Indian languages like Hindi, Telugu, Tamil, Malayalam, Kannada, Bengali, and more.
+
+- 🌐 **Responsive and User-Friendly UI**  
+  Clean, minimal design that works well across devices.
+
+## 🛠️ Tech Stack
+
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** Node.js (Express.js)  
